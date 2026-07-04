@@ -1,0 +1,80 @@
+/**
+ * ChatAPP 品牌主题变量
+ * 设计方向：简洁 · 温馨 · 私密 · 可信赖
+ * 参考图标：浅蓝眨眼笑脸气泡
+ */
+
+// ========== 色彩系统 ==========
+
+// 主色（从图标提取）
+$color-primary: #8AA4FF;
+$color-primary-dark: #6B88F5;
+$color-primary-light: #E8EFFF;
+
+// 温馨辅色
+$color-warm-bg: #FFF5E6;
+$color-warm-orange: #FFD6A5;
+$color-warm-pink: #FFE0EC;
+
+// 中性色
+$color-white: #FFFFFF;
+$color-bg-page: #F7F8FA;
+$color-border: #E8EAED;
+$color-text-secondary: #8E92A4;
+$color-text-body: #4A4E61;
+$color-text-title: #1F2335;
+
+// 功能色
+$color-success: #34C759;
+$color-warning: #FF9500;
+$color-danger: #FF3B30;
+
+// ========== 字体系统 ==========
+$font-size-hero: 40rpx;
+$font-size-title: 34rpx;
+$font-size-body: 28rpx;
+$font-size-aux: 24rpx;
+$font-size-micro: 20rpx;
+
+$font-weight-bold: 600;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+
+$line-height-base: 1.5;
+$line-height-bubble: 1.6;
+
+$font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif;
+
+// ========== 圆角系统 ==========
+$radius-xs: 8rpx;
+$radius-sm: 12rpx;
+$radius-md: 20rpx;
+$radius-lg: 24rpx;
+$radius-xl: 28rpx;
+$radius-xxl: 40rpx;
+$radius-round: 50%;
+
+// ========== 阴影系统 ==========
+$shadow-card: 0 2rpx 16rpx rgba(0, 0, 0, 0.04);
+$shadow-card-hover: 0 4rpx 24rpx rgba(0, 0, 0, 0.08);
+$shadow-bubble-user: 0 4rpx 16rpx rgba(138, 164, 255, 0.25);
+$shadow-bubble-assistant: 0 4rpx 16rpx rgba(0, 0, 0, 0.04);
+$shadow-fab: 0 4rpx 20rpx rgba(138, 164, 255, 0.4);
+
+// ========== 动画 ==========
+$ease-default: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+$ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+$duration-fast: 100ms;
+$duration-normal: 250ms;
+$duration-slow: 300ms;
+
+// ========== 间距 ==========
+$spacing-xs: 8rpx;
+$spacing-sm: 12rpx;
+$spacing-md: 20rpx;
+$spacing-lg: 24rpx;
+$spacing-xl: 30rpx;
+$spacing-xxl: 40rpx;
+
+// ========== 品牌开关 ==========
+$switch-color: $color-primary;

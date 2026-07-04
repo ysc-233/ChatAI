@@ -1,0 +1,63 @@
+/**
+ * uni-app 内置常用样式变量（已对齐 ChatAPP 品牌色系）
+ * 参考：common/styles/theme.scss
+ */
+
+/* === 行为相关颜色 === */
+$uni-color-primary: #8AA4FF;
+$uni-color-success: #34C759;
+$uni-color-warning: #FF9500;
+$uni-color-error: #FF3B30;
+
+/* === 文字颜色 === */
+$uni-text-color: #4A4E61;
+$uni-text-color-inverse: #FFFFFF;
+$uni-text-color-grey: #8E92A4;
+$uni-text-color-placeholder: #8E92A4;
+$uni-text-color-disable: #C0C0C0;
+
+/* === 背景颜色 === */
+$uni-bg-color: #FFFFFF;
+$uni-bg-color-grey: #F7F8FA;
+$uni-bg-color-hover: #F0F0F5;
+$uni-bg-color-mask: rgba(0, 0, 0, 0.4);
+
+/* === 边框颜色 === */
+$uni-border-color: #E8EAED;
+
+/* === 文字尺寸 === */
+$uni-font-size-sm: 24rpx;
+$uni-font-size-base: 28rpx;
+$uni-font-size-lg: 34rpx;
+
+/* === 图片尺寸 === */
+$uni-img-size-sm: 40rpx;
+$uni-img-size-base: 52rpx;
+$uni-img-size-lg: 80rpx;
+
+/* === Border Radius === */
+$uni-border-radius-sm: 8rpx;
+$uni-border-radius-base: 12rpx;
+$uni-border-radius-lg: 24rpx;
+$uni-border-radius-circle: 50%;
+
+/* === 水平间距 === */
+$uni-spacing-row-sm: 10rpx;
+$uni-spacing-row-base: 20rpx;
+$uni-spacing-row-lg: 30rpx;
+
+/* === 垂直间距 === */
+$uni-spacing-col-sm: 8rpx;
+$uni-spacing-col-base: 16rpx;
+$uni-spacing-col-lg: 24rpx;
+
+/* === 透明度 === */
+$uni-opacity-disabled: 0.3;
+
+/* === 文章场景 === */
+$uni-color-title: #1F2335;
+$uni-font-size-title: 40rpx;
+$uni-color-subtitle: #4A4E61;
+$uni-font-size-subtitle: 34rpx;
+$uni-color-paragraph: #4A4E61;
+$uni-font-size-paragraph: 28rpx;

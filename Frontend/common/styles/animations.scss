@@ -1,0 +1,117 @@
+/**
+ * ChatAPP 全局动画样式
+ * 统一管理页面转场、列表入场、微交互等动画
+ */
+
+/* === 页面转场 === */
+.page-slide-enter-active {
+	animation: pageSlideIn 250ms cubic-bezier(0.25, 0.1, 0.25, 1.0);
+}
+
+.page-slide-leave-active {
+	animation: pageSlideOut 200ms cubic-bezier(0.25, 0.1, 0.25, 1.0);
+}
+
+@keyframes pageSlideIn {
+	from { transform: translateX(30rpx); opacity: 0; }
+	to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pageSlideOut {
+	from { transform: translateX(0); opacity: 1; }
+	to { transform: translateX(-30rpx); opacity: 0; }
+}
+
+/* === 列表项入场（stagger via animation-delay） === */
+.list-item-enter {
+	animation: listItemFadeIn 300ms cubic-bezier(0.25, 0.1, 0.25, 1.0) both;
+}
+
+@keyframes listItemFadeIn {
+	from { opacity: 0; transform: translateY(16rpx); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+/* === 按钮点击反馈 === */
+.btn-press {
+	transition: transform 100ms cubic-bezier(0.25, 0.1, 0.25, 1.0);
+}
+
+.btn-press:active {
+	transform: scale(0.96);
+	opacity: 0.9;
+}
+
+/* === 气泡弹入 === */
+.bubble-enter {
+	animation: bubblePopIn 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes bubblePopIn {
+	from { opacity: 0; transform: translateY(20rpx) scale(0.95); }
+	to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* === 淡入 === */
+.fade-in {
+	animation: fadeIn 200ms cubic-bezier(0.25, 0.1, 0.25, 1.0) both;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+/* === 呼吸动画 === */
+.breathe {
+	animation: breathe 3s ease-in-out infinite;
+}
+
+@keyframes breathe {
+	0%, 100% { transform: scale(1); }
+	50% { transform: scale(1.05); }
+}
+
+/* === 加载圆点跳动 === */
+.loading-dot-pulse {
+	animation: loadingDotPulse 1.4s infinite ease-in-out both;
+}
+
+@keyframes loadingDotPulse {
+	0%, 80%, 100% { transform: scale(0.5); opacity: 0.3; }
+	40% { transform: scale(1); opacity: 1; }
+}
+
+/* === 旋转（笑脸等） === */
+.spin-slow {
+	animation: spinSlow 2s linear infinite;
+}
+
+@keyframes spinSlow {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+/* === 骨架屏闪烁 === */
+.skeleton-shimmer {
+	background: linear-gradient(90deg, #F0F0F5 25%, #E8E8EE 50%, #F0F0F5 75%);
+	background-size: 200% 100%;
+	animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+	0% { background-position: 200% 0; }
+	100% { background-position: -200% 0; }
+}
+
+/* === 隐私模式 - 模糊 === */
+.privacy-blur {
+	filter: blur(8rpx);
+	-webkit-filter: blur(8rpx);
+	transition: filter 300ms ease;
+}
+
+.privacy-blur * {
+	user-select: none;
+	-webkit-user-select: none;
+}

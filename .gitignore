@@ -1,0 +1,60 @@
+# ===========================
+# OS
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================
+# IDE / Editor
+# ===========================
+.trae/
+.workbuddy/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ===========================
+# Frontend (uni-app / HBuilderX)
+# ===========================
+**/unpackage/
+node_modules/
+.hbuilderx/
+
+# ===========================
+# Backend (Python / FastAPI)
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables (keep .env.example as template)
+.env
+
+# Runtime data (database, logs, uploads)
+Backend/data/
+
+# ===========================
+# Docker
+# ===========================
+docker-compose.override.yml
+
+# ===========================
+# Misc
+# ===========================
+*.log
+*.bak
+*.tmp
